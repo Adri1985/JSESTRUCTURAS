@@ -7,21 +7,21 @@ let codigoDescuento;
 let descuento = 0.1;
 
 
-let pedido = prompt("Ingrese Su pedido, para finalizar, escriba 'Salir'. Tenemos Milanesa, Empanada o CocaCola ");
+let pedido = prompt("Ingrese Su pedido, para finalizar, escriba 'Salir'. Tenemos Milanesa a $"+precioMilanesa+", Empanada a $"+precioEmpanada+" o CocaCola a $"+precioCocaCola+".");
 while(pedido != "Salir")
 {
     if(pedido == "Milanesa"){
         precioTotal+= precioMilanesa;
-        console.log("Se agrega 1 Milanesa, subtotal: "+precioTotal);
+        alert("Se agrega 1 Milanesa, subtotal: "+precioTotal);
     }
     else if(pedido == "Empanada"){
         precioTotal+= precioEmpanada;
-        console.log("Se agrega 1 Empanada, subtotal: "+precioTotal);
+        alert("Se agrega 1 Empanada, subtotal: "+precioTotal);
         }
         else if (pedido == "CocaCola")
             {
                 precioTotal+= precioCocaCola;
-                console.log("Se agrega 1 CocaCola, subtotal: "+precioTotal);
+                alert("Se agrega 1 CocaCola, subtotal: "+precioTotal);
             }
             else
                 {
