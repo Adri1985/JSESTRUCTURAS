@@ -28,7 +28,7 @@ while(pedido != "Salir")
                     alert("No contamos con ese producto");
                 }
 
-    pedido = prompt("Ingrese Su pedido, para finalizar, escriba 'Salir'. Tenemos Milanesa, Empanada o CocaCola ");            
+    pedido = prompt("Ingrese Su pedido, para finalizar, escriba 'Salir'. Tenemos Milanesa a $"+precioMilanesa+", Empanada a $"+precioEmpanada+" o CocaCola a $"+precioCocaCola+".");          
 
 }
 
