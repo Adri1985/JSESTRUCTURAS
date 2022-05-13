@@ -38,8 +38,10 @@ if(precioTotal >0)
 {
     for(let i = 0; i<4; i++)
     {   
-        codigoDescuento = prompt("Ingrese su codigo de descuento, solo tiene 3 intentos");
+        intentos = 3-i;   
+        codigoDescuento = prompt("Ingrese su codigo de descuento, tiene "+intentos+" intentos");
         {
+             
             if(codigoDescuento == "Adri")
             {
                 precioTotal = precioTotal- precioTotal*descuento;
@@ -49,8 +51,8 @@ if(precioTotal >0)
             }
             else
             {
-                intentos = 2-i;
-                alert("Codigo incorrecto, le quedan "+intentos+" intentos.");
+                
+                alert("Codigo incorrecto");
             }
         }
     }
