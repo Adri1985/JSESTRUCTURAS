@@ -5,6 +5,7 @@ let precioEmpanada = 20;
 let precioCocaCola = 15;
 let codigoDescuento;
 let descuento = 0.1;
+let intentos;
 
 
 let pedido = prompt("Ingrese Su pedido, para finalizar, escriba 'Salir'. Tenemos Milanesa a $"+precioMilanesa+", Empanada a $"+precioEmpanada+" o CocaCola a $"+precioCocaCola+".");
@@ -48,7 +49,8 @@ if(precioTotal >0)
             }
             else
             {
-                alert("Codigo incorrecto, le quedan "+3-i+" intentos.");
+                intentos = 2-i;
+                alert("Codigo incorrecto, le quedan "+intentos+" intentos.");
             }
         }
     }
